@@ -3,11 +3,11 @@
 
 <h5>Project	Summary</h5>
 
-This project rendomly generates a maze that can be seen in the standard output. It first builds a 2d array grid of custom node structures. It then uses a traversal algortithm using a stack to put all nodes into a path relationship with each other. Forks in the maze are saved to a tree structure, which can later be traversed to show all the various paths possible in the maze. (TODO).
+This project rendomly generates a maze that can be seen in text in the standard output. It first builds a 2d array grid of custom node structures. It then uses a traversal algortithm to put all nodes into a path. We can then solve this maze by saving the forks as a binary tree! (Note-- 04/27 the tree is still in progress!)
 
 <h5>How	to	Run</h5>
 
-To run, be sure that the Maze.h header and Main.cpp library live in the same folder as the driver main.cpp file. To build a maze, follow the prompts by typing an integer value between 3 and 10 for the maze dimensions. Further functionality is displayed in a menu. To select any of these options, just type the number before the period and press enter.
+To run, be sure that the Maze.h header and Maze.cpp library live in the same folder as the driver main.cpp file. To build a maze, follow the prompts by typing an integer value between 3 and 10 for the maze dimensions. Further functionality is displayed in a menu and to select any of these options, just enter the number in the standard output.
 
 ======Main Menu======
 <h3>1 Make a new maze</h3>
@@ -86,7 +86,10 @@ Additional libraries include:</h5>
 * stack
 * cmath
 * iomanip
-Which should all be included installed already with c++.
+* limits
+* cstdlib
+
+Which should all be included installed already with c++...so no installs necessary.
 
 <h5>System	Requirements</h5>
 
@@ -103,7 +106,7 @@ TBD
 
 * Assumed bug that there is a memory leak, from not explicitly deleting denamically allocated memory of the nodes in the 2d array grid. 
 * There are many times the maze has no forks, giving one path which may give errors. 
-* More public functions should be added. 
+* More public functions should be added. (I probably could move some of my private functions over, but it's hard to justify why they would need to be public...) Forgive me! 
 * The tree of forks sets up properly, but need to add the dead end leaves to the tree as well to provides traversal functionality.
 
 

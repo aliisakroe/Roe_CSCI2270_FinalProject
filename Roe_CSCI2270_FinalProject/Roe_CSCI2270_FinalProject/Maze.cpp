@@ -10,8 +10,10 @@
 #include <stack>
 #include <vector>
 #include <iomanip>
+#include <cstdlib>
 //#include <curses.h>   for user interaction eventually
 #include "Maze.h"
+
 using namespace std;
 
 

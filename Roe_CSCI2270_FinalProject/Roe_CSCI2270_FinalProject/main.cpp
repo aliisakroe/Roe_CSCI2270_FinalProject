@@ -9,6 +9,7 @@
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
+#include <limits>
 #include "Maze.h"
 using namespace std;
 
